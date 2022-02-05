@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Car Dealer</title>
+</head>
+<body>
+   <!-- Main -->
+   <section class="main">
+    <div class="border">
+        <div class="container">
+            <!-- Nav 1 -->
+            <div class="nav-1 flex">
+                <div class="nav-1-left flex">
+                    <div class="nav-1-left-opening flex">
+                        <i class="far fa-clock"></i>
+                        <p>10:00 AM to 5:00 PM </p>
+                    </div>
+                    <div class="nav-1-left-email flex">
+                        <i class="far fa-envelope"></i>
+                        <p>support@jpcross.com</p>
+                    </div>
+                </div>
+                <div class="nav-1-right flex">
+                    <div class="nav-1-right-item nav-1-right-phone flex">
+                        <i class="fas fa-phone"></i>
+                        <p>(007) 123 1223</p>
+                    </div>
+                    <div class="nav-1-right-item nav-1-right-social flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="nav-1-right-item nav-1-right-account flex">
+                        <a href="#">Login</a>
+                        <a href="#" class="register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav 2 -->
+    <div class="nav-2">
+        <div class="container">
+            <div class="nav-2-contents flex">
+                <div class="nav-2-left">
+                    <h3 class="logo"><span>JP</span> Cross</h3>
+                    <p class="logo-slogan">International Car Dealer</p>
+                </div>
+                <div class="nav-2-right-item nav-2-right flex">
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-2-right-item nav-2-right-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p class="shoppping-cart">0</p>
+                    </div>
+                    <div class="nav-2-right-item nav-2-right-search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="main-search flex">
+        <div class="main-search-contents">
+            <h1>Find your Perfect Car Today!</h1>
+            <h3>Quality Cars. Best Prices.</h3>
+            <div class="main-search-form flex">
+                <form action="">
+                    <div class="main-search-form-control">
+                        <input class="search" type="text" name="search" placeholder="Search...">
+                    </div>
+                </form>
+                <button  class="main-search-btn">Go</button>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<!-- Search Stock -->
+<section class="search-stock">
+    <div class="container">
+        <h2 class="text-center theme-h2">Search Our Stock</h2>
+        <h5 class="text-center theme-h5">Our New, Used & Demo vehicles for sale</h5>
+        <div class="search-stock-content">
+            <form class="search-stock-form" action="">
+                <div class="search-stock-item-checkbox">
+                    <div class="search-stock-checkbox">
+                        <div class="search-stock-checkbox-item">
+                            <label class="checkbox" for="myCheckboxId">
+                                <input class="checkbox-input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
+                            <div class="checkbox-box"></div>
+                            New
+                            </label>
+                        </div>
+                        <div class="search-stock-checkbox-item">
+                            <label class="checkbox1" for="myCheckboxId1">
+                                <input class="checkbox-input1" type="checkbox" name="myCheckboxName" id="myCheckboxId1">
+                            <div class="checkbox-box1"></div>
+                            Used
+                            </label>
+                        </div>
+                        <div class="search-stock-checkbox-item">
+                            <label class="checkbox2" for="myCheckboxId2">
+                                <input class="checkbox-input2" type="checkbox" name="myCheckboxName" id="myCheckboxId2">
+                            <div class="checkbox-box2"></div>
+                            Demo
+                            </label>
+                        </div>   
+                    </div>
+                    <div class="search-stock-form-item">
+                        <label for="">
+                            Transmission
+                            <div class="search-stock-form-dropdown">
+                                <input type="text" placeholder="Any" >
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            
+                        </label>
+                    </div>
+                </div>
+                <div class="search-stock-form-item search-stock-form-item-1">
+                    <label for="">
+                        Make
+                        <div class="search-stock-form-dropdown">
+                            <input type="text" placeholder="Please Select" >
+                        <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </label>
+                    <div class="search-stock-form-item">
+                        <label for="">
+                            Year
+                            <div class="dropdown-group">
+                                <div class="search-stock-form-dropdown">
+                                    <input type="text" placeholder="Min year" >
+                                <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="search-stock-form-dropdown">
+                                    <input type="text" placeholder="Max year" >
+                                <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="search-stock-form-item search-stock-form-item-1">
+                    <label for="">
+                        Model
+                        <div class="search-stock-form-dropdown model">
+                            <input type="text" placeholder="Please Select" >
+                        <i class="fas fa-chevron-down"></i>
+                        </div>  
+                    </label>
+                    <div class="search-stock-form-item">
+                        <label for="">
+                            Price
+                            <div class="dropdown-group">
+                                <div class="search-stock-form-dropdown">
+                                    <input type="text" placeholder="Min price" >
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="search-stock-form-dropdown ">
+                                    <input type="text" placeholder="Max price" >
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <p class="text-center theme-p search-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi molestias tempore inventore omnis ut sunt molestiae laborum. Voluptatem, saepe doloremque!</p>
+            <button class="search-stock-btn">Search Stock</button>
+        </div>
+    </div>
+</section>
+
+<!-- Our Selection -->
+<section class="our-selection">
+    <div class="container">
+        <h2 class="text-center theme-h2 our-selection-title">Top Picks</h2>
+        <div class="our-selection-choices">
+            <div class="our-selection-choices-item flex">
+                <h3>Featured</h3>
+                <h3>Recommended</h3>
+                <h3>Best Deals</h3>
+            </div>
+        </div>
+        <div class="our-selection-cards">
+            <div class="card-item">
+                <img src="images/audi.jpg" alt="">
+                <div class="card-item-content">
+                    <h4>2019 Audi Car</h4>
+                    <div class="card-info">
+                        <div class="card-details flex">
+                            <div class="detail flex">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <p>120,000km</p>
+                            </div>
+                            <div class="detail flex">
+                                <i class="fas fa-car"></i>
+                                <p class="">6-sp Auto Direct Shift</p>
+                            </div>
+                        </div>
+                        <div class="linebreak"></div>
+                        <h5>$39,000 USD</h5>
+                        <p >Drive Away</p>
+                    </div>
+                    <button class="card-item-btn">View More Details</button>
+                </div>  
+            </div>
+            <div class="card-item">
+                <img src="images/ford.jpg" alt="">
+                <div class="card-item-content">
+                    <h4>2020 Ford Car</h4>
+                    <div class="card-info">
+                        <div class="card-details flex">
+                            <div class="detail flex">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <p>174,000km</p>
+                            </div>
+                            <div class="detail flex">
+                                <i class="fas fa-car"></i>
+                                <p class="">6-sp Auto Direct Shift</p>
+                            </div>
+                        </div>
+                        <div class="linebreak"></div>
+                        <h5>$34,000 USD</h5>
+                        <p >Drive Away</p>
+                    </div>
+                    <button class="card-item-btn">View More Details</button>
+                </div>  
+            </div>
+            <div class="card-item">
+                <img src="images/mercedes.jpg" alt="">
+                <div class="card-item-content">
+                    <h4>2021 Mercedes Car</h4>
+                    <div class="card-info">
+                        <div class="card-details flex">
+                            <div class="detail flex">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <p>10,000km</p>
+                            </div>
+                            <div class="detail flex">
+                                <i class="fas fa-car"></i>
+                                <p class="">6-sp Auto Direct Shift</p>
+                            </div>
+                        </div>
+                        <div class="linebreak"></div>
+                        <h5>$75,000 USD</h5>
+                        <p >Drive Away</p>
+                    </div>
+                    <button class="card-item-btn">View More Details</button>
+                </div>  
+            </div>
+            <div class="card-item">
+                <img src="images/fiat.jpg" alt="">
+                <div class="card-item-content">
+                    <h4>2018 Fiat Car</h4>
+                    <div class="card-info">
+                        <div class="card-details flex">
+                            <div class="detail flex">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <p>79,000km</p>
+                            </div>
+                            <div class="detail flex">
+                                <i class="fas fa-car"></i>
+                                <p class="">6-sp Auto Direct Shift</p>
+                            </div>
+                        </div>
+                        <div class="linebreak"></div>
+                        <h5>$12,000 USD</h5>
+                        <p >Drive Away</p>
+                    </div>
+                    <button class="card-item-btn">View More Details</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Search By -->
+<section class="search-by">
+    <div class="container">
+        <div class="search-by-top flex">
+            <h2 class="theme-h2 search-by-title">Search By</h2>
+            <div class="search-by-options flex">
+                <h4>Browse Make</h4>
+                <h4>Browse Body Style</h4>
+            </div>
+        </div>
+        <div class="search-by-bottom">
+            <div class="search-by-bottom-item">
+                <h4>Audi</h4>
+                <img src="/images/logo-audi.jpg" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Ford</h4>
+                <img src="/images/logo-ford.svg" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>BMW</h4>
+                <img src="/images/logo-bmw.webp" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Lexus</h4>
+                <img src="/images/logo-lexus.jpeg" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Nissan</h4>
+                <img src="/images/logo-nissan.png" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Skoda</h4>
+                <img src="/images/logo-skoda.png" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Toyota</h4>
+                <img src="/images/logo-toyota.webp" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Volvo</h4>
+                <img src="/images/logo-volvo.jpg" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Volkswagen</h4>
+                <img src="/images/logo-vw.png" alt="">
+            </div>
+            <div class="search-by-bottom-item">
+                <h4>Mercedes</h4>
+                <img src="/images/logo-mercedes.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="about-us">
+    <div class="container">
+        <div class="about-us-info">
+            <div class="about-us-info-left">
+                <h2 class="theme-h2">About Us</h2>
+                <p class="theme-p about-us-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, fugiat!</p>
+                <p class="theme-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum id inventore voluptates debitis eius quo rerum ad. Distinctio esse at ducimus eveniet voluptatem rerum a vitae atque nam expedita sequi eligendi officiis saepe, ut sit quos animi adipisci. Possimus sapiente, molestias quo animi ipsam doloribus? Optio animi expedita dolorem ad.</p>
+            </div>
+            <div class="about-us-info-right">
+                <img src="images/about-us.jpg" alt="">
+            </div>
+        </div>
+        <div class="about-us-why-us">
+            <div class="about-us-why-us-item about-us-why-us-item-1">
+                <img src="images/all-brands-car.svg" alt="">
+                <h4>All Brands</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae maxime quis eligendi? Porro nostrum eaque, assumenda eligendi illum esse harum eius, dolorum natus velit enim dolorem ut doloribus commodi.</p>
+            </div>
+            <div class="about-us-why-us-item about-us-why-us-item-2">
+                <img src="images/free-support.svg" alt="">
+                <h4>Free Support</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae maxime quis eligendi? Porro nostrum eaque, assumenda eligendi illum esse harum eius, dolorum natus velit enim dolorem ut doloribus commodi.</p>
+            </div>
+            <div class="about-us-why-us-item about-us-why-us-item-2">
+                <img src="images/dealership.svg" alt="">
+                <h4>Dealership</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae maxime quis eligendi? Porro nostrum eaque, assumenda eligendi illum esse harum eius, dolorum natus velit enim dolorem ut doloribus commodi.</p>
+            </div>
+            <div class="about-us-why-us-item about-us-why-us-item-2">
+                <img src="images/credit-card.svg" alt="">
+                <h4>Affordable</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae maxime quis eligendi? Porro nostrum eaque, assumenda eligendi illum esse harum eius, dolorum natus velit enim dolorem ut doloribus commodi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonals -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="text-center theme-h2 testimonial-title">Testimonials</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card-item testimonial-card-item-1">
+                <img class="testimonial-car" src="images/testimonal-1.jpg" alt="">
+                <img class="testimonial-person" src="images/testimonal-person-1.jpg" alt="">
+                <div class="testimonial-card-item-content flex">
+                    <h5>Jacie Sarca</h5>
+                    <p class="testimonial-position">Teacher</p>
+                    <p class="testimonial-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus ratione rem debitis nisi, quos nemo enim ipsa recusandae! Modi!</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+            <div class="testimonial-card-item">
+                <img class="testimonial-car" src="images/bmw.jpg" alt="">
+                <img class="testimonial-person" src="images/testimonal-person-2.jpg" alt="">
+                <div class="testimonial-card-item-content flex">
+                    <h5>Mameki Su</h5>
+                    <p class="testimonial-position">Business Owner</p>
+                    <p class="testimonial-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus ratione rem debitis nisi, quos nemo enim ipsa recusandae! Modi!</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+            <div class="testimonial-card-item">
+                <img class="testimonial-car" src="images/testimonal-3.jpg" alt="">
+                <img class="testimonial-person" src="images/testimonal-person-3.jpg" alt="">
+                <div class="testimonial-card-item-content flex">
+                    <h5>Matthew Kaliea</h5>
+                    <p class="testimonial-position">Engineer</p>
+                    <p class="testimonial-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus ratione rem debitis nisi, quos nemo enim ipsa recusandae! Modi!</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Questions -->
+<section class="questions">
+    <div class="container">
+        <div class="questions-content flex">
+            <h4 class="questions-title">Have Questions? Feel Free to Ask...</h4>
+            <div class="questions-contact flex">
+                <div class="questions-phone flex">
+                    <i class="fas fa-phone"></i>
+                    <p>(248) 133-2343</p>
+                </div>
+                <div class="questions-message flex">
+                    <i class="far fa-envelope"></i>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News & Articles -->
+<section class="news-articles">
+    <div class="container">
+        <h2 class="text-center theme-h2 testimonial-title">Latest News</h2>
+        <div class="news-articles-cards">
+            <div class="news-articles-card-item ">
+                <div class="img-container">
+                    <img src="/images/news-1.jpg" alt="">
+                </div>
+                <div class="news-articles-content">
+                    <h5 class="news-article-tag">Maintenance</h5>
+                    <h4 class="news-article-title">Neglecting Regular Maintenance</h4>
+                </div>
+                <div class="news-articles-author-details flex">
+                    <div class="news-articles-author flex">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Johnny Ugale</p>
+                    </div>
+                    <div class="news-articles-created flex">
+                        <i class="fas fa-calendar-week"></i>
+                        <p>Dec 10, 2021</p>
+                    </div>
+                    <div class="news-articles-read-more">
+                        <a href="#"><i class="fas fa-chevron-right"></i> <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="news-articles-card-item news-articles-card-item-1">
+                <div class="img-container">
+                    <img src="/images/news-2.jpg" alt="">
+                </div>
+                <div class="news-articles-content">
+                    <h5 class="news-article-tag">Tires</h5>
+                    <h4 class="news-article-title">When To Replace Those Tires</h4>
+                </div>
+                <div class="news-articles-author-details flex">
+                    <div class="news-articles-author flex">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Logan Rarka</p>
+                    </div>
+                    <div class="news-articles-created flex">
+                        <i class="fas fa-calendar-week"></i>
+                        <p>Nov 29, 2021</p>
+                    </div>
+                    <div class="news-articles-read-more">
+                        <a href="#"><i class="fas fa-chevron-right"></i> <i class="fas fa-chevron-right"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="news-articles-card-item news-articles-card-item-2">
+                <div class="img-container">
+                    <img src="/images/news-3.jpg" alt="">
+                </div>
+                <div class="news-articles-content">
+                    <h5 class="news-article-tag">Adventure</h5>
+                    <h4 class="news-article-title">10 of the Best Off-Roading Areas </h4>
+                </div>
+                <div class="news-articles-author-details flex">
+                    <div class="news-articles-author flex">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Johnny Ugale</p>
+                    </div>
+                    <div class="news-articles-created flex">
+                        <i class="fas fa-calendar-week"></i>
+                        <p>Oct 15, 2021</p>
+                    </div>
+                    <div class="news-articles-read-more">
+                        <a href="#"><i class="fas fa-chevron-right"></i> <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-contents">
+            <div class="footer-contents-item contact">
+                <h4 class="footer-title">Contact Us</h4>
+                <p class="contact-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio voluptatum mollitia. Delectus, possimus optio cumque nisi debitis quidem hic!</p>
+                <div class="footer-contact footer-phone flex">
+                    <div class="footer-icon phone-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="footer-contact-number">
+                        <p>Phone Number</p>
+                        <p class="contact-detail">(248) 133-2343</p>
+                    </div>
+                </div>
+                <div class="footer-contact footer-email flex">
+                    <div class="footer-icon envelope-icon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="footer-contact-email">
+                        <p>Email Address</p>
+                        <p class="contact-detail">support@jpcross.com</p>
+                    </div>
+                </div>
+                <div class="footer-contact footer-address flex">
+                    <div class="footer-icon map-icon">
+                        <i class="fas fa-map-marker"></i>
+                    </div>
+                    <div class="footer-contact-address">
+                        <p>Address</p>
+                        <p class="contact-detail">123 Street, Vancouver, BC, Canada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contents-item info">
+                <h4 class="footer-title">Our Info</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Service</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contents-item link">
+                <h4 class="footer-title">Quick Link</h4>
+                <ul>
+                    <li><a href="#">Top Picks</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Recommended</a></li>
+                    <li><a href="#">Best Deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-contents-item subscribe">
+                <h4 class="footer-title">Subscribe</h4>
+                <div class="subscribe-form">
+                    <form action="">
+                        <div class="form-control">
+                                <input type="email" name="email" placeholder="Enter your email" class="btn">
+
+                                <input type="submit" value="Subscribe" class="footer-subscribe-btn">
+                                
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-social-media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-contents-item credit">
+                <div class="credit-card-info flex">
+                    <div class="footer-credit-info">
+                        <p>We will help you find the perfect car that fits your budget!</p>
+                    
+                    </div>
+                    
+                    <div class="credit-card-pics">
+                        <img src="/images/footer-amex.jpeg" alt="">
+                        <img src="/images/footer-visa.jpeg" alt="">
+                        <img src="/images/footer-mastercard.jpeg" alt="">
+                        <img src="/images/footer-discover.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="footer-copyright">
+        <span>JP Cross Ltd.</span> &copy; 2021. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
