@@ -1,0 +1,39 @@
+.register-background {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/login-background2.jpg') no-repeat center;
+    position: relative;
+    background-size: 100% 100%;
+    border-radius: .1rem;
+    z-index: 1;
+}
+
+.register-background:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 113, 76, 0.8);
+    z-index: -1;
+}
+
+.register-btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--theme-green);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.register-btn:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--theme-green);
+}
+
+.register-btn:active {
+    transform: scale(.98);
+}

@@ -59,6 +59,10 @@
     font-size: .9rem;
 }
 
+.login-form input {
+    border: none;
+}
+
 .login-form input,
 .login-form button {
     display: block;
@@ -66,7 +70,6 @@
     margin: .5rem 0;
     padding: .8em .9em;
     font-family: var(--roboto-font-family);
-    border: none;
     border-radius: 5px;
 }
 
@@ -79,7 +82,7 @@
     margin: 1rem 0;
 }
 
-.login-form button {
+.sign-btn {
     text-transform: uppercase;
     font-weight: 600;
     background-color: var(--theme-red);
@@ -87,13 +90,13 @@
     color: var(--white);
 }
 
-.login-form button:hover {
+.sign-btn :hover {
     background-color: var(--white);
     border-color: var(--white);
     color: var(--theme-red)
 }
 
-.login-form button:active {
+.sign-btn :active {
     transform: scale(.98);
 }
 
