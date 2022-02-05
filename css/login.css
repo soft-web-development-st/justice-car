@@ -1,0 +1,110 @@
+.main-background {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/login-background.jpg') no-repeat center;
+    position: relative;
+    background-size: 100% 100%;
+    border-radius: .1rem;
+    z-index: 1;
+}
+
+.main-background:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(251, 0, 9, 0.5);
+    z-index: -1;
+}
+
+.login-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;  
+}
+
+
+.login-card-contents {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-family: var(--raleway-font-family);
+    
+}
+
+.login-card-contents h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.google-account {
+    border: 1px solid white;
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+.or-email {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.login-form input,
+.login-form button {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    padding: .8em .9em;
+    font-family: var(--roboto-font-family);
+    border: none;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.login-form button {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--theme-red);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.login-form button:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--theme-red)
+}
+
+.login-form button:active {
+    transform: scale(.98);
+}
+
+.register {
+    font-weight: 600;
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+.register a {
+    color:var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
