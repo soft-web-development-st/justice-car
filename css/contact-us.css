@@ -1,0 +1,195 @@
+/* ===================
+    Campaign Showcase
+   ===================  */
+   .contact-us-showcase {
+    width: 100%;
+    height: 300px;
+    background: url('../images/contact-us.jpg') no-repeat center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    position: relative;
+    border-radius: .1rem;
+    z-index: 1;
+}
+
+.contact-us-showcase:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 199, 130, 0.6);
+    z-index: -1;
+}
+
+.contact-us-showcase-title {
+    text-align: center;
+}
+
+.contact-us-showcase-title h2 {
+    font-family: var(--raleway-font-family);
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* ===================
+    Contact Us Layout
+   =================== */
+.contact-us {
+    margin: 4rem 0;
+}
+
+.contact-us-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+}
+
+/* =================
+    Contact Us Form
+   ================= */
+
+.contact-us-form {
+    text-align: center;
+}
+
+.contact-us-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-areas:
+        "name email" 
+        "subject subject"
+        "comment comment"
+        "submit submit";
+}
+
+#id_message {
+    grid-area: comment;
+}
+
+#id_subject {
+    grid-area: subject;
+}
+
+#id_name {
+    grid-area: name;
+}
+  
+#id_email {
+    grid-area: email;
+}
+
+.submit {
+    grid-area: submit;
+}
+
+.contact-us-form input, 
+.contact-us-form textarea {
+    border: 1px solid rgb(236, 234, 234);
+    color: black;
+    font-family: var(--lato-font-family);
+    font-size: 1rem;
+}
+
+.contact-us-form input {
+    box-sizing: border-box;
+    padding: .85em 1.00em;
+  }
+
+.contact-us-form textarea {
+    padding: .9em 1.2500em;
+    resize: none;
+}
+
+.contact-us-form input::placeholder,
+.contact-us-form textarea::placeholder  {
+    font-size: .9rem;
+    font-family: var(--raleway-font-family);
+    font-weight: 400;
+    color: rgb(158, 152, 152);
+}
+
+.contact-us-form input[type='submit'] {
+    background-color: rgb(16, 113, 76);
+    padding: 1em 4.1500em;
+    margin: 1rem auto 0 auto;
+    color: white;
+    border: 2px solid rgb(16, 113, 76);
+    font-size: 1rem;
+    font-family: var(--raleway-font-family);
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.contact-us-form input[type='submit']:hover {
+    background-color: white;
+    border-color: rgb(16, 113, 76);
+    color: rgb(16, 113, 76);
+}
+
+.contact-us-form input[type='submit']:active {
+    transform: scale(.98);
+}
+
+.contact-us-sidebar {
+    text-align: center;
+}
+
+.contact-us-address {
+    color: rgb(251, 0, 9);
+}
+
+.contact-us-address span {
+    color: rgb(251, 0, 9);
+    margin-right: .5rem;
+}
+
+.theme-paragraph-title-h3 {
+    color: rgb(16, 113, 76);
+}
+
+.contact-us-address-contents {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.contact-us-phone {
+    margin-bottom: 1rem;
+}
+
+.contact-us-socials {
+    margin-top: 3rem;
+}
+
+
+.contact-us-socials ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+.contact-us-socials li {
+    margin: .5rem;
+    padding: 0 .3rem;
+}
+
+.contact-us-socials a {
+    color: rgb(251, 0, 9);
+}
+
+.contact-us-socials a:hover {
+    color: rgb(16, 113, 76);
+}
+
